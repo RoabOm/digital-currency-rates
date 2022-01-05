@@ -1,0 +1,12 @@
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\bin\Debug\digital currency rates.exe.config
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\bin\Debug\digital currency rates.exe
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\bin\Debug\digital currency rates.pdb
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\bin\Debug\digital currency rates.xml
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\obj\Debug\digital currency rates.vbproj.AssemblyReference.cache
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\obj\Debug\digital currency rates.vbproj.SuggestedBindingRedirects.cache
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\obj\Debug\digital_currency_rates.Resources.resources
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\obj\Debug\digital currency rates.vbproj.GenerateResource.cache
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\obj\Debug\digital currency rates.vbproj.CoreCompileInputs.cache
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\obj\Debug\digital currency rates.exe
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\obj\Debug\digital currency rates.xml
+C:\Users\Roab\source\repos\digital currency rates\digital currency rates\obj\Debug\digital currency rates.pdb
