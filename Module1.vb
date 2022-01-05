@@ -1,4 +1,4 @@
-﻿Imports System.Text.RegularExpressions
+Imports System.Text.RegularExpressions
 
 Module Module1
     Dim Coins As String
@@ -6,15 +6,13 @@ Module Module1
     Dim Coins_price_now As Double
     Dim stoop As Boolean = True
     Dim Coins_price_ As New List(Of String)
-    Dim u As Integer = 0
+    Dim num As Integer = 0
     Sub Main()
         Console.Write("[*] - Enter the currency name : ")
         Coins = Console.ReadLine
         Get_Coins(Coins)
         Dim th As Threading.Thread = New Threading.Thread(AddressOf price)
         th.Start(Coins)
-
-
         Console.ReadLine()
     End Sub
     Sub Get_Coins(Coins As String)
@@ -37,8 +35,8 @@ Module Module1
         Dim Result As String = StreamReader.ReadToEnd().ToString
         StreamReader.Dispose()
         StreamReader.Close()
-        u += 1
-        If u > 1 Then
+        num += 1
+        If num > 1 Then
             Dim ss As String
             ss = Regex.Match(Result, "{""(.*?)"":{""USD"":(.*?)}}").Groups(2).Value
             Coins_price_now = ss
@@ -58,14 +56,10 @@ Module Module1
             i = i / Coins_price
             i = i * 100
             i = i
-
             Dim ii As String = i
             Dim bb As String
             For e As Integer = 0 To 100
                 e += 10
-
-
-
                 If Coins_price_.Count = Nothing Then
                     If ii.Contains("-") Then
                         ii = ii.Replace("-", "")
@@ -109,60 +103,9 @@ Module Module1
                                 Exit For
                             End If
                         End If
-
                     Next
                 End If
-
             Next
-            'For e As Integer = 0 To -100
-            '    e -= 10
-            '    If i >= e Then
-            '        MsgBox("BTC ------> " + e.ToString + "%")
-            '    End If
-            'Next
-            'If i >= 10 Then
-            'ElseIf i >= 20 Then
-
-            'ElseIf i >= 30 Then
-
-            'ElseIf i >= 40 Then
-
-            'ElseIf i >= 50 Then
-
-            'ElseIf i >= 60 Then
-
-            'ElseIf i >= 70 Then
-
-            'ElseIf i >= 80 Then
-
-            'ElseIf i >= 90 Then
-
-            'ElseIf i >= 100 Then
-
-            'ElseIf i > 100 Then
-
-            'ElseIf i >= -10 Then
-
-            'ElseIf i >= -20 Then
-
-            'ElseIf i >= -30 Then
-
-            'ElseIf i >= -40 Then
-
-            'ElseIf i >= -50 Then
-
-            'ElseIf i >= -60 Then
-
-            'ElseIf i >= -70 Then
-
-            'ElseIf i >= -80 Then
-
-            'ElseIf i >= -90 Then
-
-            'ElseIf i >= -100 Then
-
-            'ElseIf i > -100 Then
-            'End If
             Threading.Thread.Sleep(15 * 1000)
             Get_Coins(Coins)
 
